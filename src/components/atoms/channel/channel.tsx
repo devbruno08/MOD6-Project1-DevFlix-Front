@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Channel } from "../../../utils/types/channel.type";
 import { OneChannel } from "./oneChannel";
 
-export function ProductId() {
+export function ChannelId() {
   const { id } = useParams();
 
   const [oneChannel, setChannel] = useState<Channel>({
