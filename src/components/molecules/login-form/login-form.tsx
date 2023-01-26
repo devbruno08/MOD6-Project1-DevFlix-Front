@@ -1,12 +1,14 @@
+import { FormComponent } from "./styles"
+
 export  function LoginForm() {
   return (
-    <div>
+    <FormComponent>
       <h2>Login</h2>
         <form>
-          <input/>
-          <input/>
+          <input placeholder="Usuário ou E-mail"/>
+          <input placeholder="Senha"/>
           <button>Login</button>
         </form>
-    </div>
+    </FormComponent>
   )
 }
