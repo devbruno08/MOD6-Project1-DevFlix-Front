@@ -28,7 +28,7 @@ export const FormComponent = styled.div`
 
   button {
     background-color: #44bd32;
-    width: 20%;
+    width: 30%;
     margin: 3px;
     font-weight: bold;
     cursor: pointer;
