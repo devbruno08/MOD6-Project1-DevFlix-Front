@@ -29,7 +29,6 @@ export const HeaderLogo = styled.section`
 export const HeaderSection = styled.section`
   display: flex;
   color: #7b07d0;
-  
 `;
 
 type ButtonColor = {

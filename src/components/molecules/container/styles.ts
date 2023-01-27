@@ -42,15 +42,15 @@ export const ContainerContent = styled.section`
 export const ButtonSection = styled.section`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 100%;
-  height: 90%;
+  height: 70%;
 
   button {
     margin: 0.5px;
+    margin-bottom: 2.5px;
     width: 35%;
     height: 25%;
-    border-radius: 15%;
     background-color: #44bd32;
     color: black;
     font-weight: bold;

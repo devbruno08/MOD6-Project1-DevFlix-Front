@@ -5,12 +5,7 @@ import { FaWindowClose } from "react-icons/fa";
 
 interface ChannelProps extends Channel {}
 
-export function OneChannel({
-  id,
-  name,
-  description,
-  imageURL,
-}: ChannelProps) {
+export function OneChannel({ id, name, description, imageURL }: ChannelProps) {
   const navigate = useNavigate();
 
   return (

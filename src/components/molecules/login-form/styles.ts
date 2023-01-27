@@ -10,11 +10,8 @@ export const FormComponent = styled.div`
   width: 90%;
 
   h2 {
-
     color: #44bd32;
-    margin: 0 auto;
     margin-bottom: 3%;
-    
   }
 
   input {
@@ -26,7 +23,6 @@ export const FormComponent = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    width: 40%;
     align-items: flex-end;
   }
 
