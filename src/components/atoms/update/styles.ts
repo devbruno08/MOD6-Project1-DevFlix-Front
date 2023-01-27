@@ -15,13 +15,13 @@ export const FormComponent = styled.div`
   }
 
   h2 {
-    color: #4b0082;
+    color: #44bd32;
     margin: 0 auto;
     margin-bottom: 2rem;
   }
 
   button {
-    background-color: #4b0082;
+    background-color: #44bd32;
     width: 20%;
     margin: 2px;
     font-weight: bold;

@@ -1,7 +1,8 @@
 import { Channel, ChannelInput } from "../types/channel.type";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://mod5-project-devflix-production.up.railway.app/Channel";
+axios.defaults.baseURL =
+  "https://mod5-project-devflix-production.up.railway.app/Channel";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 export const api = {
@@ -28,7 +29,9 @@ export const api = {
     }
   },
 
-  deleteChannelById: async (channelId: string): Promise<boolean | undefined> => {
+  deleteChannelById: async (
+    channelId: string
+  ): Promise<boolean | undefined> => {
     try {
       const toDeleted = await axios.delete("/" + channelId);
       if (toDeleted.status === 200) {

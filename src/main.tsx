@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <GlobalStyles />
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/update/:id" element={<Update />} />
         <Route path="/channel/:id" element={<ChannelId />} />
       </Routes>

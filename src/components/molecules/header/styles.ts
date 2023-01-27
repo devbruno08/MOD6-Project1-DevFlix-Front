@@ -4,7 +4,7 @@ export const HeaderComponent = styled.header`
   display: flex;
   width: 100%;
   height: 6%;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.4%;
   background-color: rgba(0, 0, 0, 0.9);
   align-items: center;
@@ -23,15 +23,13 @@ export const HeaderLogo = styled.section`
 
   a {
     text-decoration: none;
-    display: flex;
-    color: #7b07d0;
-    align-items: center;
   }
 `;
 
 export const HeaderSection = styled.section`
   display: flex;
   color: #7b07d0;
+  
 `;
 
 type ButtonColor = {

@@ -6,7 +6,7 @@ export const FormComponent = styled.div`
   justify-content: center;
 
   h2 {
-    color: #7b07d0;
+    color: #44bd32;
     margin: 0 auto;
     margin-bottom: 3%;
   }
@@ -17,7 +17,7 @@ export const FormComponent = styled.div`
   }
 
   button {
-    background-color: #7b07d0;
+    background-color: #44bd32;
     width: 20%;
     margin: 3px;
     font-weight: bold;

@@ -43,12 +43,12 @@ export function Header({ controlPage }: HeaderProps) {
     <>
       <HeaderComponent>
         <HeaderLogo>
-          <Link to="/">
+          <Link to="/home">
             <h1>DevFlix</h1>
           </Link>
         </HeaderLogo>
         <HeaderSection>
-          <Buttons color="purple" onClick={handleModal}>
+          <Buttons color="#44bd32" onClick={handleModal}>
             <MdOutlineNoteAdd size={24} />
           </Buttons>
         </HeaderSection>

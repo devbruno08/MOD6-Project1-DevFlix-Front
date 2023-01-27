@@ -57,14 +57,12 @@ export function Update() {
           defaultValue={channel?.description}
           type="text"
           name="channelDescription"
-          required
         ></input>
         <label>Channel Image:</label>
         <input
           defaultValue={channel?.imageURL}
           type="text"
           name="channelImage"
-          required
         ></input>
         <button type="submit">Submit</button>
       </form>

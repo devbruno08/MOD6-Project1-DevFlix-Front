@@ -21,7 +21,7 @@ export function OneChannel({
           <h2>{name}</h2>
           <p>{description}</p>
         </ChannelContent>
-        <button onClick={() => navigate("/")}>
+        <button onClick={() => navigate("/home")}>
           <FaWindowClose size={25} />
         </button>
       </ChannelSection>

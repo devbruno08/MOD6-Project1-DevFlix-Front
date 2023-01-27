@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const ContainerSection = styled.section`
   display: flex;
   flex-direction: column;
-  max-width: 20%;
+  max-width: 40%;
+  width: 40%;
   height: 40%;
-  border: 2px #7b07d0 solid;
+  border: 2px #44bd32 solid;
   justify-content: space-evenly;
   margin-top: 5px; ;
 `;
@@ -48,9 +49,9 @@ export const ButtonSection = styled.section`
   button {
     margin: 0.5px;
     width: 35%;
-    height: 90%;
+    height: 25%;
     border-radius: 15%;
-    background-color: #7b07d0;
+    background-color: #44bd32;
     color: black;
     font-weight: bold;
     cursor: pointer;
