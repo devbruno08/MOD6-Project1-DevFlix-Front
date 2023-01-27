@@ -13,9 +13,9 @@ export function Form({ handleModal, update }: FormProps) {
     e.preventDefault();
 
     const newChannel: ChannelInput = {
-      name: e.currentTarget.productName.value,
-      description: e.currentTarget.productDescription.value,
-      imageURL: e.currentTarget.productImage.value,
+      name: e.currentTarget.channelName.value,
+      description: e.currentTarget.channelDescription.value,
+      imageURL: e.currentTarget.channelImage.value,
     };
 
     const channel = await api.createChannel(newChannel);

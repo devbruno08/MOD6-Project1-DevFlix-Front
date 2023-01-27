@@ -1,13 +1,13 @@
 import { Channel, ChannelInput } from "../types/channel.type";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://api-ecomm-back.herokuapp.com/products";
+axios.defaults.baseURL = "https://mod5-project-devflix-production.up.railway.app/Channel";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 export const api = {
   getAllChannels: async (): Promise<Channel[] | undefined> => {
     try {
-      const channels = await axios.get("/all-channels");
+      const channels = await axios.get("/");
       return channels.data;
     } catch (err: any) {
       alert("Erro no servidor");
@@ -19,7 +19,7 @@ export const api = {
     channel: ChannelInput
   ): Promise<ChannelInput | undefined> => {
     try {
-      const newChannel = await axios.post("/create", channel);
+      const newChannel = await axios.post("/", channel);
       console.log(newChannel);
       return newChannel.data;
     } catch (err: any) {
@@ -30,7 +30,7 @@ export const api = {
 
   deleteChannelById: async (channelId: string): Promise<boolean | undefined> => {
     try {
-      const toDeleted = await axios.delete("/delete/" + channelId);
+      const toDeleted = await axios.delete("/" + channelId);
       if (toDeleted.status === 200) {
         return true;
       }
@@ -44,7 +44,7 @@ export const api = {
     channel: Channel
   ): Promise<ChannelInput | undefined> => {
     try {
-      const updatedChannel = await axios.put("/update", channel);
+      const updatedChannel = await axios.put("/", channel);
       return updatedChannel.data;
     } catch (err: any) {
       alert("Erro ao atualizar o canal");
@@ -54,7 +54,7 @@ export const api = {
 
   getChannelById: async (channelId: string): Promise<Channel> => {
     try {
-      const channel = await axios.get("/channel/" + channelId);
+      const channel = await axios.get("/" + channelId);
       return channel.data;
     } catch (err: any) {
       alert("Canal não encontrado");
